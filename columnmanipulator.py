@@ -16,7 +16,7 @@ def columnmanipulator():
     # parsing the modified file to reorder
     with open('final_combined_outputinputmodified.csv', 'r') as infile, open('final_combined_output_output.csv', 'a', newline='') as outfile:
         # output dict needs a list for new column ordering
-        fieldnames = ['Calendar Period Description','Calendar Run ID Description','Country','Country Description','Company Description','PAYROLL_STATUS','Employee ID','Name','Employee RCD','Location Description','HR Status','Business Unit','Dept Description','Step','Salary Admin Plan','Grade','Period Begin Date','Period End Date','Payment Date','Business Unit','Officer Code','Element Name','ELEMENT_CLASSIFICATION','Element Descr','Amount','Retro Amount','Currency','Position Number','Position Description','Employee Classification', 'Amount in USD ']
+        fieldnames = []
 
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
 
